@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dane osobowe</title>
+</head>
+<body>
+    <h1>Wypełnij proszę dane osobowe</h1>
+    <form>
+        <label for="fname">Imie:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Nazwisko:</label><br>
+        <input type="text" id="lname" name="lname">
+        <p>Płeć</p>
+        <input type="radio" id="male" name="sex" value="Mężczyzna">
+        <label for="male"> Mężczyzna</label><br>
+        <input type="radio" id="female" name="sex" value="Kobieta">
+        <label for="female"> Kobieta</label><br>
+        <input type="radio" id="other" name="sex" value="Inne">
+        <label for="other"> Inne</label><br>
+        <p>Wiek</p>
+        <input type="radio" id="0-17" name="age" value="0-17">
+        <label for="0-17">0-17</label><br>
+        <input type="radio" id="18-25" name="age" value="18-25">
+        <label for="18-25">18-25</label><br>
+        <input type="radio" id="26-35" name="age" value="25-35">
+        <label for="26-35">25-35</label><br>
+        <input type="radio" id="36-45" name="age" value="36-45">
+        <label for="36-45">36-45</label><br>
+        <input type="radio" id="46-55" name="age" value="46-55">
+        <label for="46-55">46-55</label><br>
+        <input type="radio" id="56-65" name="age" value="56-65">
+        <label for="56-65">56-65</label><br>
+        <input type="radio" id="66-99" name="age" value="66-99">
+        <label for="66-99">66-99</label><br>
+    </form>
+    <input type="submit" value="Przejdź dalej" onclick ="return Vaccine();">
+    <script>
+        function Vaccine(){
+        window.location.href = 'Szczepienia.html';
+        return false;
+        }
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Informacje dotyczące szczepien i Covid</title>
+</head>
+<body>
+<h1>Wypełnij proszę informacje na temat szczepień oraz zachorowania na COVID-19</h1>
+<form>
+    <p>Czy zaszczepiłeś/zaszczepiłeś się przeciwko COVID-19?</p>
+        <input type="radio" id="yes" name="vaccine" value ="yes"> <br>
+        <label for="yes"> Tak</label><br>
+        <input type="radio" id="no" name="vaccine" value ="no"> <br>
+        <label for="no"> Nie</label><br>
+        <p>Jeśli tak, to szczepionką której firmy się zaszczepiłeś/zaszczepiłaś?</p>
+        <input type="radio" id="Pfizer" name="vaccine2" value="Pfizer">
+        <label for="Pfizer"> Pfizer</label><br>
+        <input type="radio" id="Astra Zeneka" name="vaccine2" value="Astra Zeneka">
+        <label for="Astra Zeneka"> Astra Zeneka</label><br>
+        <input type="radio" id="Moderna" name="vaccine2" value="Moderna">
+        <label for="Moderna"> Moderna</label><br>
+        <input type="radio" id="Johnson&Johnson" name="vaccine2" value="Johnson&Johnson">
+        <label for="Johnson&Johnson"> Johnson&Johnson</label><br>
+        <p>Ile dawek szczepionki przyjąłeś/przyjęłaś dotychczas</p>
+        <input type="radio" id="1" name="number" value="1">
+        <label for="1">1</label><br>
+        <input type="radio" id="2" name="number" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" id="3" name="number" value="3">
+        <label for="3">3</label><br>
+       <input type="radio" id="more" name="number" value="more">
+        <label for="more">Więcej</label><br>
+        <p>Czy wystąpił u ciebie niepożądany odczyn poszczepienny? Jeśli tak to zaznacz objawy</p>
+        <input type="radio" id="nie" name="NOP" value="nie">
+        <label for="nie">Nie</label><br>
+        <input type="radio" id="pain" name="NOP" value="pain">
+        <label for="pain">Ból ręki</label><br>
+        <input type="radio" id="fever" name="NOP" value="fever">
+        <label for="fever">Gorączka</label><br>
+        <input type="radio" id="swelling" name="NOP" value="swelling">
+        <label for="swelling">Opuchlizna</label><br>
+        <input type="radio" id="headache" name="NOP" value="headache">
+        <label for="headache">Ból głowy</label><br>
+        <input type="radio" id="badfeeling" name="NOP" value="badfeeling">
+        <label for="badfeeling">Złe samopoczucie</label><br>
+    </form>
+    <input type="submit" value="Przejdź dalej" onclick ="return Knowledge();">
+    <script>
+        function Knowledge(){
+        window.location.href = 'Zachorowanie.html';
+        return false;
+        }
+    </script>
+
+</body>
+</html>
